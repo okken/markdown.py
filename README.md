@@ -3,6 +3,10 @@ markdown.py
 
 Yet another python implementation of markdown
 
+## Follow along
+This project is part of a demo project on [Python Testing](http://pythontesting.net).   
+You can follow it's progress in the [Markdown category](http://pythontesting.net/category/markdown/).
+
 ## Requirements
 
 ### Structure
