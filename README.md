@@ -4,8 +4,9 @@ markdown.py
 Yet another python implementation of markdown
 
 ## Status
-Really not much yere yet at all.  
-Not useful yet.  
+Stub implementation here.  
+It doesn't really do anything but spit out the input.  
+But it will work to start setting up testing frameworks.
 
 ## Follow along
 This project is part of a demo project on [Python Testing](http://pythontesting.net).   
