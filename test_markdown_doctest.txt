@@ -1,0 +1,13 @@
+To run: python -m doctest test_markdown_doctest.txt
+    or: python -m doctest -v test_markdown_doctest.txt
+
+>>> from markdown_adapter import run_markdown
+
+>>> run_markdown('paragraph wrapping')
+'<p>paragraph wrapping</p>'
+
+>>> run_markdown('*em tags*')
+'<p><em>em tags</em></p>'
+
+>>> run_markdown('**strong tags**')
+'<p><strong>strong tags</strong></p>'
