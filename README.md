@@ -8,18 +8,12 @@ Stub implementation here.
 It doesn't really do anything but spit out the input.  
 But it will work to start setting up testing frameworks.
 
+Initial doctest here.
+
 ## Follow along
 This project is part of a demo project on [Python Testing](http://pythontesting.net).   
 You can follow it's progress in the [Markdown category](http://pythontesting.net/category/markdown/).
 
 ## Requirements
-
-### Structure
-1. Written in Python
-2. Use only python packages and libraries that come with a relatively standard python installation.
-3. All contained in one python file
-
-### Functionality
-Implement all original Markdown functionality. 
-I shall expand on these requrements as I go through testing and implementing.
+Requirements moved to [Requirements.md](Requirements.md)
 
