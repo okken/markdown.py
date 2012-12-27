@@ -15,5 +15,5 @@ This project is part of a demo project on [Python Testing](http://pythontesting.
 You can follow it's progress in the [Markdown category](http://pythontesting.net/category/markdown/).
 
 ## Requirements
-Requirements moved to [Requirements.md](blob/master/Requirements.md)
+Requirements moved to [Requirements.md](https://github.com/variedthoughts/markdown.py/blob/master/Requirements.md)
 
