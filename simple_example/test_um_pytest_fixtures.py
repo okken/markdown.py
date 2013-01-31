@@ -23,11 +23,11 @@ def teardown_function(function):
 
 def test_numbers_3_4():
     print 'test_numbers_3_4  <============================ actual test code'
-    assert ( multiply(3,4) == 12 )
+    assert multiply(3,4) == 12 
 
 def test_strings_a_3():
     print 'test_strings_a_3  <============================ actual test code'
-    assert ( multiply('a',3) == 'aaa' )
+    assert multiply('a',3) == 'aaa' 
 
 
 class TestUM:
@@ -55,9 +55,9 @@ class TestUM:
 
     def test_numbers_5_6(self):
         print 'test_numbers_5_6  <============================ actual test code'
-        assert ( multiply(5,6) == 30 )
+        assert multiply(5,6) == 30 
 
     def test_strings_b_2(self):
         print 'test_strings_b_2  <============================ actual test code'
-        assert ( multiply('b',2) == 'bb')
+        assert multiply('b',2) == 'bb'
 
