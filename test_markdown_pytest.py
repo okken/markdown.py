@@ -16,8 +16,10 @@ def test_non_marked_lines():
 def test_em():
     print ('in test_em')
     assert run_markdown('*this should be wrapped in em tags*') == '<p><em>this should be wrapped in em tags</em></p>'
+    assert run_markdown('_this should be wrapped in em tags_') == '<p><em>this should be wrapped in em tags</em></p>'
 
 def test_strong():
     print ('in test_strong')
     assert run_markdown('**this should be wrapped in strong tags**') == '<p><strong>this should be wrapped in strong tags</strong></p>'
+    assert run_markdown('__this should be wrapped in strong tags__') == '<p><strong>this should be wrapped in strong tags</strong></p>'
 
