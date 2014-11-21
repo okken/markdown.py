@@ -1,11 +1,11 @@
 '''
 Test markdown.py with nose or pytest
 
-To run tests: nostests         test_markdown_nose_pytest.py
+To run tests: nosetests         test_markdown_nose_pytest.py
           or: py.test          test_markdown_nose_pytest.py
           or: python -m pytest test_markdown_nose_pytest.py
 
-Verbose (-v): nostests -v         test_markdown_nose_pytest.py
+Verbose (-v): nosetests -v         test_markdown_nose_pytest.py
           or: py.test -v          test_markdown_nose_pytest.py
           or: python -m pytest -v test_markdown_nose_pytest.py
 '''

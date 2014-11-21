@@ -1,8 +1,8 @@
 '''
 Test markdown.py with nose 
 
-To run tests: nostests     test_markdown_nose.py
-Verbose (-v): nostests -v  test_markdown_nose.py
+To run tests: nosetests     test_markdown_nose.py
+Verbose (-v): nosetests -v  test_markdown_nose.py
 '''
 
 from nose.tools import assert_equals
