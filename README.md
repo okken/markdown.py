@@ -1,19 +1,20 @@
 markdown.py
 ===========
 
-Yet another python implementation of markdown
+Yet another Python implementation of markdown
 
 ## Status
-Stub implementation here.  
-It doesn't really do anything but spit out the input.  
-But it will work to start setting up testing frameworks.
-
-Initial doctest here.
+This is really an abandoned project. 
+It's left here due to it's being referenced from the blog. 
+But no further development is planned.
 
 ## Follow along
-This project is part of a demo project on [Python Testing](http://pythontesting.net).   
-You can follow it's progress in the [Markdown category](http://pythontesting.net/category/markdown/).
+This project is part of a demo project on [Python Testing](http://pythontest.com).   
+You can follow it's progress in the [Markdown category](http://pythontest.com/tags/markdown/).
 
 ## Requirements
-Requirements moved to [Requirements.md](https://github.com/variedthoughts/markdown.py/blob/master/Requirements.md)
 
+1. Written in Python
+2. Use only Python standard library packages 
+3. All contained in one python file
+4. Implement enough of the original Markdown functionality to be useful

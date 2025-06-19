@@ -8,9 +8,6 @@ from subprocess import Popen, PIPE, STDOUT
 from tempfile import NamedTemporaryFile
 import os
 
-# This is here so there's one line to change if I want to swap 
-# out a different script, such as markdown.pl 
-_interpreter_and_script = ['python', 'markdown.py']
 
 def run_markdown(input_text):
     """
@@ -18,27 +15,37 @@ def run_markdown(input_text):
     """
     return run_markdown_pipe(input_text)
 
+
 def run_markdown_pipe(input_text):
     """
-    Simulate: echo 'some input' | python markdown.py 
+    Simulate: echo 'some input' | python markdown.py
     """
-    pipe = Popen(_interpreter_and_script, 
-            stdout=PIPE, stdin=PIPE, stderr=STDOUT)
-    output = pipe.communicate(input=input_text)[0]
-    return output.rstrip()
+    pipe = Popen(["python", "markdown.py"], stdout=PIPE, stdin=PIPE, stderr=STDOUT)
+    output = pipe.communicate(input=input_text.encode("utf-8"))[0]
+    output_text = output.rstrip().decode("utf-8")
+    return output_text.rstrip()
+
 
 def run_markdown_file(input_text):
     """
     Simulate: python markdown.py fileName
     """
     temp_file = NamedTemporaryFile(delete=False)
-    temp_file.write(input_text)
+    temp_file.write(input_text.encode("utf-8"))
     temp_file.close()
-    interp_script_and_fileName = _interpreter_and_script
-    interp_script_and_fileName.append(temp_file.name)
-    pipe = Popen(interp_script_and_fileName, 
-            stdout=PIPE, stderr=STDOUT)
+    pipe = Popen(
+        ["python", "markdown.py", temp_file.name],
+        stdout=PIPE,
+        stdin=None,
+        stderr=STDOUT,
+    )
     output = pipe.communicate()[0]
-    os.unlink(temp_file.name)
-    return output.rstrip()
+    output_text = output.rstrip().decode("utf-8")
+    return output_text.rstrip()
 
+
+if __name__ == "__main__":
+    input_text = "This is a **test** with *emphasis* and __strong__ text."
+    print(run_markdown(input_text))
+    print(run_markdown_file(input_text))
+    print(run_markdown_pipe(input_text))
