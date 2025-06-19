@@ -4,9 +4,11 @@ markdown.py
 Yet another Python implementation of markdown
 
 ## Status
-This is really an abandoned project. 
-It's left here due to it's being referenced from the blog. 
-But no further development is planned.
+This is really an abandoned project.  
+It's left here due to it's being referenced from the blog.  
+But no further development is planned.  
+
+A little more of the project was developed in the [submark](https://github.com/okken/submark) repo.
 
 ## Follow along
 This project is part of a demo project on [Python Testing](http://pythontest.com).   
