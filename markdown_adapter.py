@@ -6,7 +6,6 @@ since markdown.py only provides a CLI.
 
 from subprocess import Popen, PIPE, STDOUT
 from tempfile import NamedTemporaryFile
-import os
 
 
 def run_markdown(input_text):
